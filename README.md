@@ -1,160 +1,99 @@
-<div align="center">
-
 # 🚀 CI/CD Learning Projects
 
-**Пять языков. Пять пайплайнов. Один принцип: push → lint → test → build.**
+<p align="center">
+  <b>Пять языков. Пять пайплайнов. Один принцип: push → lint → test → build.</b>
+</p>
 
-![Go](https://img.shields.io/badge/-Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
-![Rust](https://img.shields.io/badge/-Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
-![PHP](https://img.shields.io/badge/-PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![C++](https://img.shields.io/badge/-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![C#](https://img.shields.io/badge/-C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/-Java-007396?style=for-the-badge&logo=openjdk&logoColor=white)
-![Node.js](https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+<p align="center">
+  <a href="https://github.com/ChrisRedfield48?tab=repositories">
+    <img alt="Repos" src="https://img.shields.io/badge/repos-20%2B-blue?style=for-the-badge">
+  </a>
+  <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2088FF?style=for-the-badge&logo=githubactions&logoColor=white">
+</p>
 
-</div>
+---
+
+## 🆕 Новые GUI-проекты (Go + Fyne)
+
+| Проект | Стек | Что делает | CI/CD | Репозиторий |
+|---|---|---|---|---|
+| 🛠 **arduino-manager-gui** | Go + Fyne | Менеджер Arduino-библиотек и ядер с поиском по GitHub | matrix build → release (4 платформы) | [открыть →](https://github.com/ChrisRedfield48/arduino-manager-gui) |
+| ⚡ **hex-loader** | Go + Fyne | Загрузчик HEX-файлов в Arduino через arduino-cli | matrix build → release (4 платформы) | [открыть →](https://github.com/ChrisRedfield48/hex-loader) |
+| 🎨 **hello-gui** | Go + Fyne | Учебное GUI-приложение с автодеплоем бинарников | matrix build → release | [открыть →](https://github.com/ChrisRedfield48/hello-gui) |
+
+> Все три проекта собираются под **Linux / macOS (Intel + ARM) / Windows** и публикуются в **GitHub Releases** по тегу `v*`.
 
 ---
 
 ## 📦 Основные CI/CD-проекты
 
-<table>
-<tr><th>Проект</th><th>Стек</th><th>Пайплайн</th><th>Репозиторий</th></tr>
+> Пять репозиториев с полноценным пайплайном **lint → test → build**. Каждый — на своём языке.
 
-<tr>
-<td>🐹 <b>my-go-app</b></td>
-<td>Go</td>
-<td>vet → test → docker build</td>
-<td><a href="https://github.com/ChrisRedfield48/my-go-app">открыть →</a></td>
-</tr>
-
-<tr>
-<td>🦀 <b>my-rust-app</b></td>
-<td>Rust</td>
-<td>clippy → test → docker build</td>
-<td><a href="https://github.com/ChrisRedfield48/my-rust-app">открыть →</a></td>
-</tr>
-
-<tr>
-<td>🐘 <b>my-php-app</b></td>
-<td>PHP</td>
-<td>lint → phpunit → docker build</td>
-<td><a href="https://github.com/ChrisRedfield48/my-php-app">открыть →</a></td>
-</tr>
-
-<tr>
-<td>⚙️ <b>my-cpp-app</b></td>
-<td>C++ / CMake</td>
-<td>clang-format → gtest → docker build</td>
-<td><a href="https://github.com/ChrisRedfield48/my-cpp-app">открыть →</a></td>
-</tr>
-
-<tr>
-<td>🎯 <b>hello-csharp</b></td>
-<td>C# / .NET</td>
-<td>test → <b>release</b> (matrix binaries)</td>
-<td><a href="https://github.com/ChrisRedfield48/hello-csharp">открыть →</a></td>
-</tr>
-
-</table>
+| Проект | Стек | Пайплайн | Репозиторий |
+|---|---|---|---|
+| 🐹 **my-go-app** | Go | vet → test → docker build | [открыть →](https://github.com/ChrisRedfield48/my-go-app) |
+| 🦀 **my-rust-app** | Rust | clippy → test → docker build | [открыть →](https://github.com/ChrisRedfield48/my-rust-app) |
+| 🐘 **my-php-app** | PHP | lint → phpunit → docker build | [открыть →](https://github.com/ChrisRedfield48/my-php-app) |
+| ⚙️ **my-cpp-app** | C++ / CMake | clang-format → gtest → docker build | [открыть →](https://github.com/ChrisRedfield48/my-cpp-app) |
+| 🎯 **hello-csharp** | C# / .NET | test → **release** (matrix binaries) | [открыть →](https://github.com/ChrisRedfield48/hello-csharp) |
 
 ---
 
 ## 🗂️ Остальные репозитории
 
-<table>
-<tr><th>Проект</th><th>Стек</th><th>Репозиторий</th></tr>
+> Учебные проекты, где я тренировался в отдельных технологиях. Пайплайны упрощённые или отсутствуют.
 
-<tr>
-<td>🐍 <b>hello-python</b></td>
-<td>Python</td>
-<td><a href="https://github.com/ChrisRedfield48/hello-python">открыть →</a></td>
-</tr>
-
-<tr>
-<td>🐍 <b>my-python-app</b></td>
-<td>Python</td>
-<td><a href="https://github.com/ChrisRedfield48/my-python-app">открыть →</a></td>
-</tr>
-
-<tr>
-<td>🐹 <b>hello-go</b></td>
-<td>Go</td>
-<td><a href="https://github.com/ChrisRedfield48/hello-go">открыть →</a></td>
-</tr>
-
-<tr>
-<td>🐹 <b>hello-go-releases</b></td>
-<td>Go</td>
-<td><a href="https://github.com/ChrisRedfield48/hello-go-releases">открыть →</a></td>
-</tr>
-
-<tr>
-<td>🦀 <b>hello-rust</b></td>
-<td>Rust</td>
-<td><a href="https://github.com/ChrisRedfield48/hello-rust">открыть →</a></td>
-</tr>
-
-<tr>
-<td>🦀 <b>my-rust-app2</b></td>
-<td>Rust / Dockerfile</td>
-<td><a href="https://github.com/ChrisRedfield48/my-rust-app2">открыть →</a></td>
-</tr>
-
-<tr>
-<td>☕ <b>hello-java</b></td>
-<td>Java</td>
-<td><a href="https://github.com/ChrisRedfield48/hello-java">открыть →</a></td>
-</tr>
-
-<tr>
-<td>🟩 <b>my-node-app</b></td>
-<td>JavaScript / Node.js</td>
-<td><a href="https://github.com/ChrisRedfield48/my-node-app">открыть →</a></td>
-</tr>
-
-<tr>
-<td>🧪 <b>my-first-cicd</b></td>
-<td>—</td>
-<td><a href="https://github.com/ChrisRedfield48/my-first-cicd">открыть →</a></td>
-</tr>
-
-</table>
+| Проект | Стек | Репозиторий |
+|---|---|---|
+| 🐍 **hello-python** | Python | [открыть →](https://github.com/ChrisRedfield48/hello-python) |
+| 🐍 **my-python-app** | Python | [открыть →](https://github.com/ChrisRedfield48/my-python-app) |
+| 🐹 **hello-go** | Go | [открыть →](https://github.com/ChrisRedfield48/hello-go) |
+| 🐹 **hello-go-releases** | Go | [открыть →](https://github.com/ChrisRedfield48/hello-go-releases) |
+| 🦀 **hello-rust** | Rust | [открыть →](https://github.com/ChrisRedfield48/hello-rust) |
+| 🦀 **my-rust-app2** | Rust / Dockerfile | [открыть →](https://github.com/ChrisRedfield48/my-rust-app2) |
+| ☕ **hello-java** | Java | [открыть →](https://github.com/ChrisRedfield48/hello-java) |
+| 🟩 **my-node-app** | JavaScript / Node.js | [открыть →](https://github.com/ChrisRedfield48/my-node-app) |
+| 🧪 **my-first-cicd** | — | [открыть →](https://github.com/ChrisRedfield48/my-first-cicd) |
 
 ---
 
 ## ⚙️ Как устроены пайплайны
 
-```
-push / PR ──▶ lint ──▶ test ──▶ docker build
-                                     │
-                          (только hello-csharp)
-                                     ▼
-                        git tag v* ──▶ release
-                     matrix: linux-x64 · osx-arm64 · win-x64
-```
+### 🔍 CI — в основных пяти проектах
 
-<details>
-<summary><b>🔍 CI — в основных пяти проектах</b></summary>
-<br>
-
-- Триггер: push и pull request
+- Триггер: `push` и `pull_request`
 - Статический анализ / линтинг под свой стек
 - Прогон unit-тестов
 - Сборка Docker-образа приложения
 
-</details>
-
-<details>
-<summary><b>📤 Release — только hello-csharp</b></summary>
-<br>
+### 📤 Release — в GUI-проектах и `hello-csharp`
 
 - Триггер: push git-тега (`v1.0.0` и т.п.)
-- Матричная сборка self-contained бинарников: `linux-x64`, `osx-arm64`, `win-x64`
+- Матричная сборка self-contained бинарников
 - Автопубликация в GitHub Releases
 
-</details>
+### Диаграмма пайплайнов
+
+```mermaid
+flowchart LR
+    A[push / PR] --> B[lint]
+    B --> C[test]
+    C --> D[docker build]
+
+    E[git tag v*] --> F[build matrix]
+    F --> G[linux-amd64]
+    F --> H[darwin-amd64]
+    F --> I[darwin-arm64]
+    F --> J[windows-amd64]
+    G --> K[GitHub Release]
+    H --> K
+    I --> K
+    J --> K
+
+    style A fill:#2088FF,color:#fff
+    style E fill:#ff2e88,color:#fff
+    style K fill:#00d4ff,color:#000
+```
 
 ---
 
@@ -162,8 +101,12 @@ push / PR ──▶ lint ──▶ test ──▶ docker build
 
 > Кликни по названию проекта в любой таблице — попадёшь прямо в репозиторий с полным README, кодом и историей запусков workflow.
 
-<div align="center">
-
 ### 👤 [ChrisRedfield48](https://github.com/ChrisRedfield48)
 
-</div>
+---
+
+<p align="center">
+  <a href="https://github.com/ChrisRedfield48?tab=repositories">📂 Все репозитории</a> ·
+  <a href="https://github.com/ChrisRedfield48?tab=repositories&type=source">🛠 Проекты</a> ·
+  <a href="https://github.com/ChrisRedfield48?tab=stars">⭐ Избранное</a>
+</p>
