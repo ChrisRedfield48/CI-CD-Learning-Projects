@@ -13,7 +13,21 @@
 
 ---
 
+## 🌐 Статические сайты и SPA (GitHub Pages)
+
+> Проекты с автоматическим деплоем на GitHub Pages (Environments + Deployments). Без сборки или со сборкой, но всегда с гейтингом `needs: ci`.
+
+| Проект | Стек | Что делает | CI/CD | Репозиторий |
+|---|---|---|---|---|
+| ⚡ **cyberpunk-pages** | HTML + CSS + JS | Многостраничный фан-сайт Cyberpunk 2077 с глитч-анимациями | lint → deploy to Pages | [открыть →](https://github.com/ChrisRedfield48/cyberpunk-pages) |
+| 🚀 **hello-pages** | React + TS + Vite | SPA-приложение с покрытием тестами | lint → type-check → test → build → deploy | [открыть →](https://github.com/ChrisRedfield48/hello-pages) |
+| 🌌 **hello-static** | HTML + CSS + JS | Многостраничный сайт с интерактивным 3D-фоном | lint → deploy to Pages | [открыть →](https://github.com/ChrisRedfield48/hello-static) |
+
+---
+
 ## 🆕 Новые GUI-проекты (Go + Fyne)
+
+> Кроссплатформенные десктопные приложения с публикацией бинарников в GitHub Releases.
 
 | Проект | Стек | Что делает | CI/CD | Репозиторий |
 |---|---|---|---|---|
@@ -72,6 +86,12 @@
 - Матричная сборка self-contained бинарников
 - Автопубликация в GitHub Releases
 
+### 🌐 Deploy to Pages — в статических сайтах и SPA
+
+- Триггер: `push` в ветку `main`
+- Линтинг (и тесты для SPA)
+- Прямая публикация статики (или папки `dist/`) в GitHub Pages
+
 ### Диаграмма пайплайнов
 
 ```mermaid
@@ -90,9 +110,14 @@ flowchart LR
     I --> K
     J --> K
 
+    L[push to main] --> M[CI: lint & test]
+    M -->|success| N[deploy to GitHub Pages]
+
     style A fill:#2088FF,color:#fff
     style E fill:#ff2e88,color:#fff
+    style L fill:#2088FF,color:#fff
     style K fill:#00d4ff,color:#000
+    style N fill:#00d4ff,color:#000
 ```
 
 ---
